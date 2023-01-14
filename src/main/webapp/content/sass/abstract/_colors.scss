@@ -1,0 +1,29 @@
+@import './variables';
+
+/*==========================================
+=                 Buttons                  =
+==========================================*/
+
+$btn-primary-color: var(--btn-primary-color, $white) !default;
+$btn-primary-bg: var(--btn-primary-bg, $blue-light) !default;
+$btn-primary-hover: var(--btn-primary-hover, $blue) !default;
+
+$btn-info-color: var(--btn-info-color, $white) !default;
+$btn-info-bg: var(--btn-info-bg, $pink) !default;
+$btn-info-hover: var(--btn-info-hover, $pink-dark) !default;
+
+$btn-danger-color: var(--btn-danger-color, $white) !default;
+$btn-danger-bg: var(--btn-danger-color, $red) !default;
+$btn-secondary-hover: var(--btn-secondary-hover, $red-dark) !default;
+
+$btn-warning-color: var(--btn-warning-color, $white) !default;
+$btn-warning-bg: var(--btn-warning-bg, $yellow) !default;
+$btn-warning-hover: var(--btn-warning-hover, $yellow-dark) !default;
+
+
+/*==========================================
+=           Global text colors             =
+==========================================*/
+
+$body-text-color: $black;
+$body-bg-color: $white;

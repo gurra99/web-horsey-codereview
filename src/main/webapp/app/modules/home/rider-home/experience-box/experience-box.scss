@@ -1,0 +1,44 @@
+.experienceBox {
+  display: flex;
+  flex-direction: column;
+  width: 690px;
+  align-items: center;
+  border: solid 1px rgba(13, 54, 139, 0.1);
+  background-color: white;
+
+  .headerContainer {
+    width: 100%;
+    position: relative;
+  }
+
+  .contentContainer {
+    width: 100%;
+    padding: 30px;
+    height: 450px;
+  }
+
+  .closed {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .experienceBox {
+    width: 620px;
+    margin-right: 10px;
+
+    .headerContainer .circleContainer {
+      .greyCircle {
+        left: 531px;
+      }
+
+      .upArrow {
+        left: 569px;
+      }
+
+      .downArrow {
+        left: 569px;
+      }
+    }
+  }
+}

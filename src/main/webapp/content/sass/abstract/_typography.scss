@@ -1,0 +1,36 @@
+@import './variables';
+
+/*==========================================
+=             Body font sizes              =
+==========================================*/
+
+
+$body-font-size: var(--body-font-size, $fs-base) !default;
+$body-font-weight: var(--body-font-weight, $fw-regular) !default;
+
+
+
+/*==========================================
+=             Heading font sizes           =
+==========================================*/
+
+
+$h1-font-size: var(--h1-font-size, $h-1) !default;
+$h2-font-size: var(--h2-font-size, $h-2) !default;
+$h3-font-size: var(--h3-font-size, $h-3) !default;
+$h4-font-size: var(--h4-font-size, $h-4) !default;
+
+
+
+/*==========================================
+=             Head font weights            =
+==========================================*/
+
+
+$h1-text-weight: var(--h1-text-weight, $fw-bold) !default;
+$h2-text-weight: var(--h2-text-weight, $fw-semi-bold) !default;
+$h3-text-weight: var(--h3-text-weight, $fw-regular) !default;
+$h4-text-weight: var(--h4-text-weight, $fw-regular) !default;
+
+
+

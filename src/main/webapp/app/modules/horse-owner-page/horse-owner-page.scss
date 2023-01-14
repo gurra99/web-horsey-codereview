@@ -1,0 +1,14 @@
+.horseOwnerPage {
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f8fa;
+  margin: auto;
+
+  .contentContainer {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,16 @@
+.modalBookingPlanner {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 600px;
+  height: 650px;
+  border: 1px solid #ccc;
+  padding: 25px;
+  box-shadow: 1px 1px 1px black;
+  top: 12%;
+  left: 40%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}

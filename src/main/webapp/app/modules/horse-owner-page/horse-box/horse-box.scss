@@ -1,0 +1,75 @@
+.horseBox {
+  display: flex;
+  width: 690px;
+  height: 530px;
+  border: solid 1px rgba(13, 54, 139, 0.1);
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .headerContainer {
+    width: 100%;
+    position: relative;
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      padding: 30px;
+      height: 70px;
+      border-bottom: solid 1px rgba(13, 54, 139, 0.1);
+      width: 100%;
+    }
+  }
+
+  .horseCardContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .horseCard {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-style: normal;
+      padding: 16px;
+      text-decoration: none;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      &:hover {
+        width: 100%;
+        box-shadow: 0 26px 74px -10px rgba(0, 0, 0, 0.15), 2px 2px 6px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .fullName {
+        width: 40%;
+        font-size: 18px;
+      }
+
+      .heightAndWeightContainer {
+        display: flex;
+      }
+    }
+  }
+
+  .closed {
+    display: none;
+  }
+}

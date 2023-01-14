@@ -1,0 +1,34 @@
+.bookingManager {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  text-align: center;
+
+  .headerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+  }
+
+  .dropdownContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contentContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .bookingManager .contentContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

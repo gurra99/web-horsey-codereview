@@ -1,0 +1,65 @@
+.rider {
+  margin: auto;
+  background-color: white;
+}
+
+.riderDetail {
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  background-color: white;
+  border: solid 1px rgba(13, 54, 139, 0.1);
+  margin: 80px auto;
+  padding: 40px 0 40px 50px;
+
+  .header {
+    margin-bottom: 15px;
+  }
+
+  .informationContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+    }
+  }
+
+  .buttonContainer {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.riderUpdate {
+  width: 1500px;
+  margin: auto;
+  background-color: white;
+
+  .title {
+    margin: 40px 0;
+  }
+
+  .checkboxContainer {
+    margin: 40px 0;
+  }
+
+  .buttonContainer {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .riderDetail {
+    width: 1200px;
+  }
+
+  .riderUpdate {
+    width: 1200px;
+  }
+}

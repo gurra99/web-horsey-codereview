@@ -1,0 +1,435 @@
+body {
+  font-size: $body-font-size;
+}
+
+.appContainer {
+  box-sizing: border-box;
+  .viewContainer {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f7f8fa;
+    padding: 1rem;
+    .card {
+      padding: 1rem;
+    }
+    .viewRoutes {
+      min-height: 1200px;
+      margin-top: 25px;
+      > div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.fsPrimaryHeading {
+  font-family: $be-vietnam-pro;
+  font-size: $fs-xl;
+  font-weight: $fw-regular;
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+}
+
+.fsSecondaryHeading {
+  font-size: $fs-large;
+  font-weight: $fw-regular;
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+}
+
+.fsTabHeader {
+  font-size: $fs-base;
+  font-weight: $fw-bold;
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  width: 99% !important;
+  height: calc(100vh - 110px) !important;
+  margin: 5px;
+  z-index: 1000;
+  padding: 5px 25px 50px 25px !important;
+}
+
+.darkMode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.darkModeImage {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.rowContainer {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.rowName {
+  margin-right: 10px;
+}
+
+.rowValue {
+  width: 100%;
+  color: #777f8d;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.blueBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: normal;
+  color: $blue;
+  padding: 4px 8px;
+  background-color: $blue-very-light;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12.5px;
+  text-transform: capitalize;
+}
+
+.greenBox {
+  text-align: center;
+  width: 120px;
+  margin-left: auto;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #04a70c;
+  padding: 4px 8px;
+  background: rgba(66, 203, 73, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12.5px;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.redBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin-left: auto;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #f3031e;
+  padding: 4px 8px;
+  background: rgba(193, 57, 111, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12.5px;
+  text-transform: capitalize;
+}
+
+.greyCircle {
+  position: absolute;
+  top: 13px;
+  left: 600px;
+  border: solid 1px rgba(13, 54, 139, 0.1);
+  background: white;
+  width: 45px;
+  height: 45px;
+  line-height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.upArrow {
+  position: absolute;
+  top: 32px;
+  left: 638px;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid;
+  border-top: 3px solid;
+  transform: rotate(-45deg);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.downArrow {
+  position: absolute;
+  top: 30px;
+  left: 638px;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid;
+  border-top: 3px solid;
+  transform: rotate(135deg);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Custom button styles
+========================================================================== */
+
+.iconButton > .btn {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0.5rem;
+  line-height: 1rem;
+  &:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* ==========================================================================
+Generic styles
+========================================================================== */
+
+/* Temporary workaround for availity-reactstrap-validation */
+.invalidFeedback {
+  display: inline;
+}
+
+/* other generic styles */
+
+.description {
+  font-size: 0.9em;
+  margin: 1px 10px 1px 10px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 2px;
+}
+
+.error {
+  color: white;
+  background-color: red;
+}
+
+.break {
+  white-space: normal;
+  word-break: break-all;
+}
+
+.breakWord {
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.preserveSpace {
+  white-space: pre-wrap;
+}
+
+/* padding helpers */
+
+@mixin pad($size, $side) {
+  @if $size== '' {
+    @if $side== '' {
+      .pad {
+        padding: 10px !important;
+      }
+    } @else {
+      .pad {
+        padding-#{$side}: 10px !important;
+      }
+    }
+  } @else {
+    @if $side== '' {
+      .pad-#{$size} {
+        padding: #{$size}px !important;
+      }
+    } @else {
+      .pad-#{$side}-#{$size} {
+        padding-#{$side}: #{$size}px !important;
+      }
+    }
+  }
+}
+
+@include pad('', '');
+@include pad('2', '');
+@include pad('3', '');
+@include pad('5', '');
+@include pad('10', '');
+@include pad('20', '');
+@include pad('25', '');
+@include pad('30', '');
+@include pad('50', '');
+@include pad('75', '');
+@include pad('100', '');
+@include pad('4', 'top');
+@include pad('5', 'top');
+@include pad('10', 'top');
+@include pad('20', 'top');
+@include pad('25', 'top');
+@include pad('30', 'top');
+@include pad('50', 'top');
+@include pad('75', 'top');
+@include pad('100', 'top');
+@include pad('4', 'bottom');
+@include pad('5', 'bottom');
+@include pad('10', 'bottom');
+@include pad('20', 'bottom');
+@include pad('25', 'bottom');
+@include pad('30', 'bottom');
+@include pad('50', 'bottom');
+@include pad('75', 'bottom');
+@include pad('100', 'bottom');
+@include pad('5', 'right');
+@include pad('10', 'right');
+@include pad('20', 'right');
+@include pad('25', 'right');
+@include pad('30', 'right');
+@include pad('50', 'right');
+@include pad('75', 'right');
+@include pad('100', 'right');
+@include pad('5', 'left');
+@include pad('10', 'left');
+@include pad('20', 'left');
+@include pad('25', 'left');
+@include pad('30', 'left');
+@include pad('50', 'left');
+@include pad('75', 'left');
+@include pad('100', 'left');
+
+@mixin noPadding($side) {
+  @if $side== 'all' {
+    .noPadding {
+      padding: 0 !important;
+    }
+  } @else {
+    .noPadding#{$side} {
+      padding-#{$side}: 0 !important;
+    }
+  }
+}
+
+@include noPadding('left');
+@include noPadding('right');
+@include noPadding('top');
+@include noPadding('bottom');
+@include noPadding('all');
+
+/* end of padding helpers */
+
+.noMargin {
+  margin: 0px;
+}
+@mixin voffset($size) {
+  @if $size== '' {
+    .voffset {
+      margin-top: 2px !important;
+    }
+  } @else {
+    .voffset-#{$size} {
+      margin-top: #{$size}px !important;
+    }
+  }
+}
+
+@include voffset('');
+@include voffset('5');
+@include voffset('10');
+@include voffset('15');
+@include voffset('30');
+@include voffset('40');
+@include voffset('60');
+@include voffset('80');
+@include voffset('100');
+@include voffset('150');
+
+.readonly {
+  background-color: #eee;
+  opacity: 1;
+}
+
+/* ==========================================================================
+make sure browsers use the pointer cursor for anchors, even with no href
+========================================================================== */
+
+a:hover {
+  cursor: pointer;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+button.anchorBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  align-items: initial;
+  text-align: initial;
+  width: 100%;
+}
+
+a.anchorBtn:hover {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+Metrics and Health styles
+========================================================================== */
+
+#threadDump .popover,
+#healthCheck .popover {
+  top: inherit;
+  display: block;
+  font-size: 10px;
+  max-width: 1024px;
+}
+
+.threadDumpModalLock {
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#healthCheck .popover {
+  margin-left: -50px;
+}
+
+.healthDetails {
+  min-width: 400px;
+}
+
+/* bootstrap 3 input-group 100% width
+http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
+
+.widthMin {
+  width: 1% !important;
+}
+

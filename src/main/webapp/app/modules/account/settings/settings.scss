@@ -1,0 +1,14 @@
+.userSettings {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.userSettingsButton {
+  margin: 20px 0 30px 0;
+}
+
+@media (max-width: 700px) {
+  .userSettings {
+    padding: 20px;
+  }
+}

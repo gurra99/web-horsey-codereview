@@ -1,0 +1,28 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+
+  .numberOfHorses {
+    width: 1200px;
+    color: #777f8d;
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  .searchBox {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 30px;
+    border: solid 1px rgba(13, 54, 139, 0.1);
+    background-color: white;
+
+    .searchContainer {
+      width: 100%;
+    }
+  }
+}
